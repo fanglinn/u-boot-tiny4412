@@ -246,6 +246,10 @@ ifeq ($(HOSTARCH),$(ARCH))
 CROSS_COMPILE ?=
 endif
 
+ARCH		?= arm
+CROSS_COMPILE ?= /home/flinn/tools/4.5.1/bin/arm-none-linux-gnueabi-
+
+
 KCONFIG_CONFIG	?= .config
 export KCONFIG_CONFIG
 
